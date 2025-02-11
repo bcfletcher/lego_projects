@@ -1,1 +1,1 @@
-This is robot design we used in 2024 Submerged competition
+This is the robot design we used in the 2024 Submerged competition
