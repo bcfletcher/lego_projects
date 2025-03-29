@@ -4,7 +4,7 @@ All the non-Lego Python examples were created in Visual Studio Code for Mac.
 
 The Lego Models were created using Bricklink Studio for Mac.
 
-The Lego Python examples were created in Lego Spike Prime 3.4.3 and Pybricks 3.5
+The Lego Python examples were created in Lego Spike Prime 3.4.3 and Pybricks 3.5 or 3.6 beta
 
 All new Lego Python examples and my robot library will be for Pybricks. I have decided to move away from Lego Spike Prime due to lack of support by Lego, substantial number of bugs, poor documentation quality and completeness, and poor UI design choices. I strongly recommend any First Lego League (FLL) team that wants to develop in Python use Pybricks instead.
 
