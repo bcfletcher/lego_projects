@@ -6,6 +6,6 @@ The code implemented a number of other missions but we simply ran out of time to
 
 They used created and used the Gen3_Robot_Front_Top_Attach_rev18.io with a number of attachments. 
 
-We are still coverting the attachments to drawings in BrinkLink Studio.
+We are still converting the attachments to drawings in BrinkLink Studio.
 
 
