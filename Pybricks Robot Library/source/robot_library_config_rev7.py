@@ -84,8 +84,8 @@ NumberOfHubs=3
 
 robotConfigs=[]
 robotConfigs.append(RobotConfig("CoachHub",0))
-robotConfigs.append(RobotConfig("T2PrimaryHub",1))
-robotConfigs.append(RobotConfig("T2SecondaryHub",2))
+robotConfigs.append(RobotConfig("T1PrimaryHub",1))
+robotConfigs.append(RobotConfig("T1SecondaryHub",2))
 
 
 #
@@ -134,7 +134,7 @@ robotConfigs[0].RightAttachmentGearsCfg=[28,36]
 # hub #2 configuration
 #
 
-robotConfigs[1].HubName="T2PrimaryHub"
+robotConfigs[1].HubName="T1PrimaryHub"
 robotConfigs[1].HubNumber=1
 robotConfigs[1].topSide=Axis.Z
 robotConfigs[1].frontSide=Axis.Y * -1
@@ -175,7 +175,7 @@ robotConfigs[1].RightAttachmentGearsCfg=[28,36]
 # robot #3 congfiguration
 #
 
-robotConfigs[2].HubName="T2SecondHub"
+robotConfigs[2].HubName="T1SecondHub"
 robotConfigs[2].HubNumber=1
 robotConfigs[2].topSide=Axis.Z
 robotConfigs[2].frontSide=Axis.Y * -1

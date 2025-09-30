@@ -1,32 +1,26 @@
-# Team 2 Submerged Main menu
+# Team 1 Robot menu
 #
 # menu revision number
-menu_revision="30"
+menu_revision="32"
 #
-from pybricks.hubs import PrimeHub
-from pybricks.pupdevices import Motor
-from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
-from pybricks.robotics import DriveBase
-from pybricks.tools import wait, StopWatch, multitask, run_task, hub_menu
-from umath import sin, pi
+from pybricks.tools import wait, run_task, hub_menu
+import robot_library_rev31 as RL
 
-# update robot config and library rev # as needed
-from robot_library_config_rev7 import *
-from robot_library_rev29 import *
 #
 # this is the list of tasks and the main function for each task
 # add more as needed. tasks usually consist of 1 or more missions
 #
 # The name of the task file minus the .py file extension
 #
-from box_robot_task1_rev23 import box_robot_task1
-from box_robot_task2_rev3 import box_robot_task2
-#from t1_rev1 import T1_Run
+from robot_demo1_rev1 import robot_demo1_task
+from robot_demo2_rev1 import robot_demo2_task
+from ue_task1_rev1 import T1_Run
+
 #from t2_rev1 import T3_Run
 #from t3_rev1 import T3_Run
 #from t4_rev1 import T4_Run
 
-clearConsole()
+RL.clearConsole()
 
 print("Robot Menu, rev#",menu_revision)
 
@@ -37,7 +31,7 @@ print("Robot Menu, rev#",menu_revision)
 # 0 = CoachHub
 # 1 = T2PrimaryHub
 # 2 = T2SecondaryHub
-initiatizeRobot(0)
+RL.initiatizeRobot(1)
 
 
 # Based on the selection, run a task .
@@ -53,32 +47,32 @@ while True:
         if selected == "1":
             #hub.speaker.beep()
             wait(1000)
-            run_task(box_robot_task1())
-            run_task(stopEverything())
+            run_task(robot_demo1_task())
+            run_task(RL.stopEverything())
         elif selected == "2":
             wait(1000)
-            run_task(box_robot_task2())  
-            run_task(stopEverything())
+            run_task(robot_demo2_task())  
+            run_task(RL.stopEverything())
         elif selected == "3":
             wait(1000)
-            #run_task(T2_Run())  
-            run_task(stopEverything())
+            run_task(T1_Run())  
+            run_task(RL.stopEverything())
         elif selected == "4":
             wait(1000)
             #run_task(T3_Run())  
-            run_task(stopEverything())
+            run_task(RL.stopEverything())
         elif selected == "5":
             wait(1000)
             #run_task(T4_Run())  
-            run_task(stopEverything())            
+            run_task(RL.stopEverything())            
         elif selected == "X":
             # does not nothing used to show end of menu
-            run_task(stopEverything())
+            run_task(RL.stopEverything())
             break
 
     except BaseException as menuException:
         print("Stop was Pressed or a Critical Error Occured. Stopping all motors.")
         print(menuException)
-        run_task(stopEverything())
+        run_task(RL.stopEverything())
         break
     print("    Back to Menu")
