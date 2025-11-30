@@ -1,4 +1,4 @@
-This repository is a set of Python scripts, Lego models (Bricklink Studio), Lego Spike Prime Python examples, Pybricks examples including a Robot Library, and a Python course we created to our school's First Lego League team.
+This repository is a set of Python scripts, Lego models (Bricklink Studio), Lego Spike Prime Python examples, Pybricks examples including a Robot Library, and a Python course we created to our school's First Lego League teams.
 
 All the non-Lego Python examples were created in Visual Studio Code.
 
